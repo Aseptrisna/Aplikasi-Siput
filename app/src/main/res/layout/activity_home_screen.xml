@@ -49,10 +49,11 @@
                  android:layout_marginBottom="5dp"
                  android:textSize="20dp"
                  android:textColor="@color/black"
-                 android:text="Televisi"
+                 android:text="Lampu 1"
                  android:layout_width="match_parent"
                  android:layout_height="30dp"/>
              <TextView
+                 android:id="@+id/statuslampu1"
                  android:layout_marginTop="5dp"
                  android:layout_marginLeft="5dp"
                  android:layout_marginRight="5dp"
@@ -63,6 +64,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="30dp"/>
              <Switch
+                 android:id="@+id/lampu1"
                  android:gravity="center"
                  android:layout_gravity="center"
                  android:layout_width="100dp"
@@ -84,10 +86,11 @@
                     android:layout_marginBottom="5dp"
                     android:textSize="20dp"
                     android:textColor="@color/black"
-                    android:text="Kulkas"
+                    android:text="Lampu 2"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
                 <TextView
+                    android:id="@+id/statuslampu2"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -98,6 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
                 <Switch
+                    android:id="@+id/lampu2"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:layout_width="100dp"
@@ -123,6 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
                 <TextView
+                    android:id="@+id/statuslampu3"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -133,6 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
                 <Switch
+                    android:id="@+id/lampu3"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:layout_width="100dp"
