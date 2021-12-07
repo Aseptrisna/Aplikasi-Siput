@@ -53,7 +53,6 @@ public class Rmq_Service {
             StrictMode.setThreadPolicy(policy);
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
-
             String messageOn = message ;
             channel.basicPublish("", queue_name_publish,null,messageOn.getBytes());
             myRmq.Berhasil(message);

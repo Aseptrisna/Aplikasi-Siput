@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/drawable-anydpi-v24/app_icon.xml" value="0.19166666666666668" />
         <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/drawable/home.xml" value="0.17222222222222222" />
         <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/drawable/shape.xml" value="0.1" />
-        <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
+        <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/drawable/shape1.xml" value="0.12552083333333333" />
+        <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
+        <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/layout/activity_set_jadwal_screen.xml" value="0.22" />
         <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/layout/activity_splash_screen.xml" value="0.10144927536231885" />
         <entry key="..\:/23221111/Data S2/GPU/app/src/main/res/layout/activity_start_up_screen.xml" value="0.14666666666666667" />
       </map>

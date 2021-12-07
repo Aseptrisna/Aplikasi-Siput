@@ -63,12 +63,25 @@
                  android:text="Off"
                  android:layout_width="match_parent"
                  android:layout_height="30dp"/>
-             <Switch
-                 android:id="@+id/lampu1"
-                 android:gravity="center"
+             <LinearLayout
                  android:layout_gravity="center"
-                 android:layout_width="100dp"
-                 android:layout_height="50dp"/>
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Switch
+                     android:id="@+id/lampu1"
+                     android:gravity="center"
+                     android:layout_gravity="center"
+                     android:layout_width="100dp"
+                     android:layout_height="50dp"/>
+                 <ImageView
+                     android:onClick="goto_jadwal"
+                     android:id="@+id/jam1"
+                     android:src="@drawable/ic_time"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_marginBottom="10dp"/>
+             </LinearLayout>
+
          </LinearLayout>
             <LinearLayout
                 android:background="@drawable/shape"
@@ -100,12 +113,24 @@
                     android:text="Off"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
-                <Switch
-                    android:id="@+id/lampu2"
-                    android:gravity="center"
+                <LinearLayout
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/lampu2"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:onClick="goto_jadwal2"
+                        android:id="@+id/jam2"
+                        android:src="@drawable/ic_time"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:background="@drawable/shape"
@@ -137,12 +162,30 @@
                     android:text="Off"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
-                <Switch
-                    android:id="@+id/lampu3"
-                    android:gravity="center"
+<!--                <Switch-->
+<!--                    android:id="@+id/lampu3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="50dp"/>-->
+                <LinearLayout
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/lampu3"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:onClick="goto_jadwal3"
+                        android:id="@+id/jam3"
+                        android:src="@drawable/ic_time"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:background="@drawable/shape"
@@ -160,10 +203,11 @@
                     android:layout_marginBottom="5dp"
                     android:textSize="20dp"
                     android:textColor="@color/black"
-                    android:text="Lampu Depan"
+                    android:text="Televisi"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
                 <TextView
+                    android:id="@+id/txttv"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -173,11 +217,89 @@
                     android:text="Off"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
-                <Switch
-                    android:gravity="center"
+                <LinearLayout
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/televisi"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:onClick="goto_jadwaltv"
+                        android:id="@+id/jamtv"
+                        android:src="@drawable/ic_time"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/txtsuhu"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Off"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <EditText
+                    android:id="@+id/suhu"
+                    android:background="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Masukan Nila Celcius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/ac"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:onClick="goto_jadwalac"
+                        android:id="@+id/jamac"
+                        android:src="@drawable/ic_time"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <TextView
