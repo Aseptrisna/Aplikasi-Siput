@@ -18,10 +18,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeoutException;
 
 public class Rmq_Service {
-    String user = "iotperikanan";
-    String pass = "KanS3g4R112";
-    String host = "rmq2.pptik.id";
-    String vhost = "/iotperikanan";
+    String user = "kapalselam";
+    String pass = "1245and4512";
+    String host = "cloudrmqserver.pptik.id";
+    String vhost = "/kapalselam";
     String exchanges_name = "amq.fanout";
     ConnectionFactory factory = new ConnectionFactory();
     final My_Rmq myRmq;
@@ -29,10 +29,6 @@ public class Rmq_Service {
     public Rmq_Service(My_Rmq myRmq) {
         this.myRmq = myRmq;
     }
-
-
-
-
     /**
      * Setup Connection Factory
      * Load Setting Connection RMQ Sebagai Parameter Koneksi

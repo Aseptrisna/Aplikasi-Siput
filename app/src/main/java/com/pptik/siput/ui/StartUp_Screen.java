@@ -39,7 +39,7 @@ public class StartUp_Screen extends AppCompatActivity {
     }
 
     private void goto_home() {
-        Intent intent=new Intent(StartUp_Screen.this,Home_Screen.class);
+        Intent intent=new Intent(StartUp_Screen.this,Dashboard_Screen.class);
         startActivity(intent);
         finish();
     }
